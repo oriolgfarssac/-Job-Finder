@@ -1,0 +1,358 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gotham_Bold', sans-serif;
+    background-color: aliceblue;
+}
+
+@font-face {
+    font-family: 'Gotham_Light';
+    src: url('./assets/Gotham Rounded/gothamrnd_light.otf');
+}
+
+@font-face {
+    font-family: 'Gotham_Bold';
+    src: url('./assets/Gotham Rounded/gothamrnd_bold.otf');
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.nav_title{
+    font-family: 'Gotham_Bold', sans-serif;
+    font-size: 40px;
+    color: rgb(45, 45, 45);
+    margin: 0px;
+}
+
+.message_container{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 78vh;
+    width: 50%;
+    background-color: rgba(191, 246, 102, 0);
+    scroll-behavior:smooth;
+}
+
+.message_container::-webkit-scrollbar {
+    display: none; 
+}
+
+.input_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 50%;
+    background-color: rgba(240, 248, 255, 0);
+}
+
+.seach_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: rgb(45, 45, 45);
+}
+
+
+.text_input{
+    text-align: center;
+    height: 40px;
+    width: 80%;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+    outline: none;
+    color: rgb(45, 45, 45);
+    font-family: 'Gotham_Bold', sans-serif;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.input_button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 8%;
+    height: 45px;
+    background-color: rgb(77, 77, 77);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.2s;
+}
+
+.input_button:active{
+    width: 6%;
+    height: 35px;
+}
+
+.icon_input{
+    width: 30px;
+    height: auto;
+    transition: all 0.2s;
+}
+
+.link{
+    color: rgb(117, 210, 70);
+}
+
+.icon_input:hover{
+    width: 40px;
+    height: auto;
+}
+
+.icon_input:active{
+    width: 25px;
+    height: auto;
+}
+
+.botmsg{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: fit-content;
+    justify-content: space-between;
+    height: auto;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(77, 77, 77);
+    color: white;
+    font-weight: 500;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.mymsg{
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: 20px;
+    width: fit-content;
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(151, 184, 255);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.chat_button{
+    width: 40%;
+    height: 45px;
+    background-color: rgb(117, 210, 70);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    font-weight: bolder;
+    margin-left: 10px;
+    transition: all 0.2s;
+}
+
+.chat_button:hover{
+    font-size: 14px;
+}
+
+.chat_button:active{
+    font-size: 10px;
+}
+
+.chat_button2{
+    width: 40%;
+    height: 45px;
+    background-color: rgb(255, 60, 60);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    transition: all 0.2s;
+    font-weight: bolder;
+    margin-left: 20px;
+}
+
+
+.chat_button2:hover{
+    font-size: 14px;
+}
+
+.chat_button2:active{
+    font-size: 10px;
+}
+
+@media (max-width: 550px) {
+    .nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 7vh;
+    }
+    
+    .nav_title{
+        font-family: 'Gotham_Bold', sans-serif;
+        font-size: 30px;
+        color: rgb(45, 45, 45);
+        margin: 0px;
+    }
+    
+    .message_container{
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        height: 82vh;
+        width: 95%;
+        background-color: rgba(255, 255, 255, 0);
+        -ms-overflow-style: none; 
+    }
+    
+    .input_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 11vh;
+        width: 95%;
+    }
+    
+    .seach_container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 50px;
+        padding: 2px;
+        border-radius: 5px;
+        width: 100%;
+        background-color: rgb(45, 45, 45);
+    }
+    
+    
+    .text_input{
+        text-align: center;
+        height: 40px;
+        width: 70%;
+        border-radius: 10px;
+        background-color: white;
+        border: none;
+        outline: none;
+        color: rgb(45, 45, 45);
+        font-family: 'Gotham_Bold', sans-serif;
+    }
+    
+    
+    .input_button{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 12%;
+        height: 45px;
+        background-color: rgb(77, 77, 77);
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        transition: all 0.2s;
+    }
+    
+    .input_button:active{
+        width: 6%;
+        height: 35px;
+    }
+    
+    .icon_input{
+        width: 30px;
+        height: auto;
+        transition: all 0.2s;
+    }
+    
+    .icon_input:hover{
+        width: 40px;
+        height: auto;
+    }
+    
+    .icon_input:active{
+        width: 25px;
+        height: auto;
+    }
+    
+    .botmsg{
+        margin-left: 20px;
+        margin-top: 20px;
+        width: fit-content;
+        justify-content: space-between;
+        height: auto;
+        padding: 15px;
+        border-radius: 5px;
+        background-color: rgb(77, 77, 77);
+        color: white;
+        font-weight: 500;
+    }
+    
+    .mymsg{
+        margin-left: auto;
+        margin-right: 20px;
+        margin-top: 20px;
+        width: fit-content;
+        height: auto;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: rgb(151, 184, 255);
+    }
+    
+    .chat_button{
+        width: 40%;
+        height: 45px;
+        background-color: rgb(117, 210, 70);
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        color: white;
+        font-weight: bolder;
+        transition: all 0.2s;
+    }
+    
+    .chat_button:hover{
+        font-size: 14px;
+    }
+    
+    .chat_button:active{
+        font-size: 10px;
+    }
+    
+    .chat_button2{
+        width: 40%;
+        height: 45px;
+        background-color: rgb(255, 60, 60);
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        color: white;
+        transition: all 0.2s;
+        font-weight: bolder;
+        margin-left: 10px;
+    }
+    
+    
+    .chat_button2:hover{
+        font-size: 14px;
+    }
+    
+    .chat_button2:active{
+        font-size: 10px;
+    }
+    
+}
