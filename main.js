@@ -93,6 +93,7 @@ const typeJob = () => {
 }
 
 window.onload = function() {
+    console.log("Hi! Helloo guyys!" + " What are you doing here?");
     firstChat();
     primerChat();
 };
